@@ -1,0 +1,17 @@
+.title {
+    font-size: 20px;
+    color: white;
+}
+
+.button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #14a9ee;
+    background-color: #14a9ee;
+    color: white;
+}
+
+.about-us {
+    font-family: 'Playfair Display', serif; 
+}
+
