@@ -1,6 +1,28 @@
 .title {
     font-size: 20px;
-    color: white;
+}
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.header-title .header-newline {
+    font-size: 125px;
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    display: block;
+}
+
+.header-title .header-newline::first-letter {
+    text-transform: uppercase;
+}
+
+.delimiter {
+    font-size: 12px !important;
+    color: red;
 }
 
 .button {
@@ -11,7 +33,34 @@
     color: white;
 }
 
-.about-us {
+.subtitle {
     font-family: 'Playfair Display', serif; 
+    font-weight: bolder;
+    color: #505155 !important;
+    font-size: 39px;
+
 }
 
+.about-us-subtitle span {
+    color:#14a9ee;
+}
+
+.tour-itinerary-subtitle span {
+    color: #FFFF;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #6f7380;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.dop-information {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #505155;
+
+
+}
