@@ -1,0 +1,193 @@
+/* .title {
+    font-size: 20px;
+}
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.header-title .header-newline {
+    font-size: 125px;
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    display: block;
+}
+
+.header-title .header-newline::first-letter {
+    text-transform: uppercase;
+}
+
+.delimiter {
+    font-size: 12px !important;
+    color: red;
+}
+
+.button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #14a9ee;
+    background-color: #14a9ee;
+    color: white;
+}
+
+.subtitle {
+    font-family: 'Playfair Display', serif; 
+    font-weight: bolder;
+    color: #505155 !important;
+    font-size: 39px;
+
+}
+
+.about-us-subtitle span {
+    color:#14a9ee;
+}
+
+.tour-itinerary-subtitle span {
+    color: #FFFF;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #6f7380;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.dop-information {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #505155;
+
+
+}
+ */
+body{
+    margin: 0;
+    padding: 0;
+}
+ .wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/wrapper.webp);
+    background-size: cover;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 35px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+}
+
+.header-logo {
+    height: 40px;
+}
+
+.header-nav {
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.header-nav-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-nav-item {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.header-nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.header-nav-item button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 36px;
+    width: 111px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.header-info {
+    margin-top: 150px;
+    display: flex;
+}
+
+.header-introduce {
+    width: 60%;
+    height: 100%;
+    margin-right: 10%;
+}
+
+.header-trip {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-trip img {
+    width: 370px;
+}
+
+.header-info-title .delimiter {
+    color: red;
+}
+
+.header-info-title {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 180px;
+}
+
+.header-info-title span:last-child {
+    font-size: 180px;
+    font-family: 'Playfair Display', serif;
+}
+
+.header-info-link img {
+   height: 25px;
+   fill: red;
+   margin-right: 10px;
+}
+
+.header-info-link {
+    display: flex;
+    align-items: center;
+}
+
+.header-info-link a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-info-link span {
+    color: white;
+    margin-right: 5px;
+}
