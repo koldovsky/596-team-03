@@ -245,16 +245,43 @@ padding: 90px 0px 400px;
     font-family: 'Roboto', sans-serif;
     color: #505155;
     font-size: 19px;
+    line-height: 30px;
 }
 
 .about-us-item-title {
     font-family: 'Roboto', sans-serif;
     color: #232428;
     font-size: 24px;
+    margin-left: 20px;
 }
 
 .about-us-item-info {
     font-family: 'Roboto', sans-serif;
     color: #505155;
     font-size: 15px;
+    margin-left: 20px;
+}
+
+.about-us-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us-option {
+    height: 330px;
+    width: 340px;
+    background-color: white;
+}
+
+.about-us-option img {
+    width: 200px;
+    height: 105px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.wrapper-about-us {
+    background-image: url(../img/waves.webp);
+    height: 820px;
+    background-size: cover;
 }
