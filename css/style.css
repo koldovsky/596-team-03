@@ -80,7 +80,7 @@ body{
     max-width: 1100px;
     padding: 0 35px;
     margin: 0 auto;
-    height: 100vh;
+    height: 60vh;
 }
 
 .row {
@@ -190,4 +190,71 @@ body{
 .header-info-link span {
     color: white;
     margin-right: 5px;
+}
+
+.about-us-general {
+padding: 110px 0px 40px;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+background-color: white;
+}
+
+.about-us-title {
+    font-family: 'Roboto', sans-serif;
+    color: #6f7380;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about-us-introduce {
+    width: 40%;
+    margin-right: 10%;;
+}
+
+.about-us-info {
+    width: 50%;
+}
+
+.about-us-item {
+padding: 90px 0px 400px;
+}
+
+.delimiter {
+    color: red;
+}
+
+.about-us-subtitle {
+    margin: 0;
+    
+}
+
+.about-us-subtitle {
+    font-family: 'Playfair Display', serif; 
+    font-weight: bolder;
+    color: #505155 !important;
+    font-size: 39px;
+}
+
+.about-us-subtitle span {
+    color:#14a9ee;
+}
+
+.information-about-us {
+    font-family: 'Roboto', sans-serif;
+    color: #505155;
+    font-size: 19px;
+}
+
+.about-us-item-title {
+    font-family: 'Roboto', sans-serif;
+    color: #232428;
+    font-size: 24px;
+}
+
+.about-us-item-info {
+    font-family: 'Roboto', sans-serif;
+    color: #505155;
+    font-size: 15px;
 }
