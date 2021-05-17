@@ -72,6 +72,7 @@
     --delimiter-color: red;
     --marker-color: #14a9ee;
     --item-color: #232428;
+    --itinerary-color: #a9a9a9;
  }
 
 body{
@@ -337,4 +338,62 @@ margin-top: 40px;
     color: var(--secondary-color);
     font-size: 14px;
     text-decoration: none;
+}
+
+.wrapper-tour-itinerary {
+    padding: 100px 0px;
+}
+
+.tour-itinerary-general {
+    padding: 0px 40px;
+}
+
+.tour-itinerary-title {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tour-itinerary-subtitle {
+    font-family: 'Playfair Display', serif; 
+    font-weight: bolder;
+    color: var(--main-color);
+    font-size: 39px;  
+}
+
+.tour-itinerary-subtitle span {
+    color: var(--secondary-color);
+}
+
+.tour-itinerary-information {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    font-size: 17px;
+    line-height: 30px; 
+}
+
+.tour-itinerary-item-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: var(--secondary-color);
+}
+
+.tour-itinerary-item-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: var(--itinerary-color)
+}
+
+.itinerary-map {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: left;
+}
+
+.tour-itinerary-title {
+    display: flex;
+    flex-wrap: wrap;
 }
