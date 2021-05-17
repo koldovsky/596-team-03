@@ -65,6 +65,15 @@
 
 }
  */
+ :root {
+    --main-color: #505155;
+    --secondary-color: white;
+    --title-color: #6f7380;
+    --delimiter-color: red;
+    --marker-color: #14a9ee;
+    --item-color: #232428;
+ }
+
 body{
     margin: 0;
     padding: 0;
@@ -115,7 +124,7 @@ body{
 }
 
 .header-nav-item a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -123,9 +132,9 @@ body{
 }
 
 .header-nav-item button {
-    border: 2px solid white;
+    border: 2px solid var(--secondary-color);
     background-color: transparent;
-    color: white;
+    color: var(--secondary-color);
     height: 36px;
     width: 111px;
     font-family: 'Roboto', sans-serif;
@@ -156,11 +165,11 @@ body{
 }
 
 .header-info-title .delimiter {
-    color: red;
+    color: var(--delimiter-color);
 }
 
 .header-info-title {
-    color: white;
+    color: var(--secondary-color);
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 180px;
@@ -173,7 +182,7 @@ body{
 
 .header-info-link img {
    height: 25px;
-   fill: red;
+   fill: var(--delimiter-color);
    margin-right: 10px;
 }
 
@@ -184,26 +193,26 @@ body{
 }
 
 .header-info-link a {
-    color: white;
+    color: var(--secondary-color);
     font-family: 'Roboto', sans-serif;
 }
 
 .header-info-link span {
-    color: white;
+    color: var(--secondary-color);
     margin-right: 5px;
 }
 
 .about-us-general {
-padding: 110px 0px 40px;
-display: flex;
-flex-wrap: wrap;
-width: 100%;
-background-color: white;
+    padding: 110px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--secondary-color);
 }
 
 .about-us-title {
     font-family: 'Roboto', sans-serif;
-    color: #6f7380;
+    color: var(--title-color);
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
@@ -223,7 +232,7 @@ padding: 90px 0px 400px;
 }
 
 .delimiter {
-    color: red;
+    color: var(--delimiter-color);
 }
 
 .about-us-subtitle {
@@ -234,31 +243,31 @@ padding: 90px 0px 400px;
 .about-us-subtitle {
     font-family: 'Playfair Display', serif; 
     font-weight: bolder;
-    color: #505155 !important;
+    color: var(--main-color);
     font-size: 39px;
 }
 
 .about-us-subtitle span {
-    color:#14a9ee;
+    color: var(--marker-color);
 }
 
 .information-about-us {
     font-family: 'Roboto', sans-serif;
-    color: #505155;
+    color: var(--main-color);
     font-size: 19px;
     line-height: 30px;
 }
 
 .about-us-item-title {
     font-family: 'Roboto', sans-serif;
-    color: #232428;
+    color: var(--item-color);
     font-size: 24px;
     margin-left: 20px;
 }
 
 .about-us-item-info {
     font-family: 'Roboto', sans-serif;
-    color: #505155;
+    color: var(--main-color);
     font-size: 15px;
     margin-left: 20px;
 }
@@ -271,7 +280,7 @@ padding: 90px 0px 400px;
 .about-us-option {
     height: 330px;
     width: 340px;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 .about-us-option img {
@@ -292,7 +301,7 @@ padding: 90px 0px 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: white;
+    color: var(--secondary-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -325,7 +334,7 @@ margin-top: 40px;
 }
 
 .header-trip-item a {
-    color: white;
+    color: var(--secondary-color);
     font-size: 14px;
     text-decoration: none;
 }
