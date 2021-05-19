@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./js/slider/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/slider/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -184,8 +186,30 @@
                     </div>
                 </div>
             </div>
-        </div> 
-     
+        </div>
+        
+        <!-- Яна, твой БЛОК ТУУУУУУУУУУУУУУУУУУУУТ!!!!!!!!!!! -->
+        
+        <div class="wrapper-spots">
+            <div class="container">
+                <div class="row">
+                    <div class="spots">
+                        <h2 class="spots-title"><span class="delimiter">━</span>STUNNING SPOTS</h2> 
+                        <h3 class="spots-subtitle">Beautiful <span>Landscapes</span></h3>
+                        <p class="spots-info">The beauty of Norway can hardly be overestimated. It has literally everything:<br> glaciers, green forests, beaches. Come and see with your own eyes.</p>
+                        <div class="owl-carousel spots-slider">
+                            <div class="item"><img src="img/ship.jpg" alt=""></div>
+                            <div class="item"><img src="img/sunset.jpg" alt=""></div>
+                            <div class="item"><img src="img/village.jpg" alt=""></div>
+                            <div class="item"><img src="img/city.jpg" alt=""></div>
+                            <div class="item"><img src="img/icenature.jpg" alt=""></div>
+                            <div class="item"><img src="img/bridge.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- <div class="banner5">
         <h2 id="itinerary" class="places-title title"><span class="delimiter">—</span>Places</h2>
         <h3 class="itinerary-subtitle subtitle"><b></b>Where do we go?</h3>   
@@ -274,6 +298,21 @@
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contacts">Contacts</a>
             </nav>
-     </footer> 
+     </footer>-->
+     <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+     <script src="./js/slider/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+     <script src="./js/slider/OwlCarousel2-2.3.4/src/js/owl.navigation.js"></script>
+     <script>
+         $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin: 10,
+    item:3,
+    nav:true,
+    dots:true,
+})
+     </script> 
 </body>
-</html>  --> -->
+</html>  
