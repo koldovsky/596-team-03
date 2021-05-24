@@ -595,3 +595,134 @@ margin-top: 40px;
 .spots-slider {
   position: absolute;  
 }
+
+.wrapper-faq {
+    width: 100%;
+    height: 670px;
+    padding-top: 60px;
+    background-color: #232428;
+    padding-bottom: 230px;
+}
+
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.faq-title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    margin-bottom: 20px;
+}
+
+.faq-title .delimiter {
+    margin-right: 10px;
+}
+
+.faq-info {
+    width: 540px;
+    min-height: 608px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+
+.faq-subtitle {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 55px;
+}
+
+.faq-subtitle span {
+    color: #505155;
+}
+
+.faq-tour {
+    color: #ffffff99;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    line-height: 10px;
+    width: 100%;
+    display: block;
+    margin-top: 25px;
+}
+
+.faq-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.faq-item {
+    width: 510px;
+    min-height: 58px;
+    padding: 10px 0px 5px 0px;
+    margin: 0px;
+    list-style: none;
+    border-bottom: solid 1px white;
+}
+
+.faq-button {
+    background-color: transparent;
+    border: none;
+    height: auto;
+    width: 15px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.faq-button:hover {
+    cursor: pointer;
+}
+
+.faq-item-enter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.faq-item-title {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 400px;
+}
+
+.faq-item-info {
+    font-size: 15px;
+    color: #ffffff99;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    display: none;
+    transition: all 0.2s;
+}
+
+.faq-img {
+    width: 510px;
+    height: 590px;
+    padding: 0px 15px; 
+}
+
+.faq-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+

@@ -209,6 +209,57 @@
                 </div>
             </div>
         </div>
+        <div class="wrapper-faq">
+            <div class="container">
+                <div class="row">
+                    <div class="faq">
+                        <div class="faq-info">
+                            <h2 class="faq-title"><span class="delimiter">━</span>FAQ</h2>
+                            <h3 class="faq-subtitle">Explore our expertly <span>crafted tours</span></h3>
+                            <span class="faq-tour">
+                                <p>We tried to make our Norway tour as comfortable and</p>
+                                <p>interesting as possible. If you still have questions, you can</p>
+                                <p>contact us directly or fill out the form below.</p>
+                            </span>
+                            <ul class="faq-list">
+                                <li class="faq-item">
+                                    <div class="faq-item-enter">
+                                        <button id="faq-btn" class="faq-button" onclick="moreFunction(1)">&#10133;</button>
+                                        <h4 class="faq-item-title">Does this tour require physical fitness?</h4>
+                                    </div>
+                                    <div id="more-1" class="faq-item-info">This tour is suitable for untrained tourists. No cliff climbing, we promise.</div>
+                                </li>
+                                <li class="faq-item">
+                                    <div class="faq-item-enter">
+                                        <button id="faq-btn" class="faq-button" onclick="moreFunction(2)">&#10133;</button>
+                                        <h4 class="faq-item-title">Will I be able to see the Northern Lights?</h4>
+                                    </div>
+                                    <div id="more-2" class="faq-item-info">We cannot promise you this. The Northern Lights only appear in winter under special circumstances. But we will hunt it in Tromsø.</div>
+                                </li>
+                                <li class="faq-item">
+                                    <div class="faq-item-enter">
+                                        <button id="faq-btn" class="faq-button" onclick="moreFunction(3)">&#10133;</button>
+                                        <h4 class="faq-item-title">Can I take my children with me on the tour?</h4>
+                                    </div>
+                                    <div id="more-3" class="faq-item-info">Yes, we offer a 50% discount for children.</div>
+                                </li>
+                                <li class="faq-item">
+                                    <div class="faq-item-enter">
+                                        <button id="faq-btn" class="faq-button" onclick="moreFunction(4)">&#10133;</button>
+                                        <h4 class="faq-item-title">Can I join you not in Oslo, but in another city?</h4>
+                                    </div>
+                                    <div id="more-4" class="faq-item-info">Depending on the weather conditions, our route may change, so we strongly recommend starting with other tourists from Oslo. We do not change the route to pick up tourists on the way.</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="faq-img">
+                            <img src="img/tourist.webp" alt="man">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- <div class="banner5">
         <h2 id="itinerary" class="places-title title"><span class="delimiter">—</span>Places</h2>
@@ -314,5 +365,17 @@
     dots:true,
 })
      </script> 
+     <script>
+         function moreFunction(idBtn){
+             let btnText = document.getElementById("faq-btn")
+             let more = document.getElementById(`more-${idBtn}`)
+             if (more.style.display === "none") {
+                 more.style.display = "block"
+             }
+             else {
+                more.style.display = "none"
+             }
+         }
+     </script>
 </body>
 </html>  
