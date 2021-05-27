@@ -7,6 +7,8 @@
     --item-color: #232428;
     --itinerary-color: #a9a9a9;
     --comment-color: #707070;
+    --block-color: rgb(45, 46, 52);
+    --more-color: rgba(255,255,255,0.6);
  }
 
 body{
@@ -658,6 +660,60 @@ margin-top: 40px;
     height: 100%;
     width: 100%;
     object-fit: cover; 
+}
+
+.wrapper-contacts {
+    background-image: url(../img/waterfall.webp);
+    background-size: cover;
+}
+
+.contacts-general {
+    padding: 130px 0px;
+}
+
+.contacts-block {
+    margin: 30px 0px 0px;
+    padding: 0px 15px;
+    background-color: var(--item-color);
+    width: 45%;
+    height: 700px;
+}
+
+
+.contacts-text {
+    background-color: var(--block-color);
+    display: block;
+    margin: 12px 0px 0px;
+    padding: 14px 20px;
+    width: 80%;
+}
+
+.contacts-title {
+    margin: 40px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contacts-subtitle {
+    margin: 20px 0px 30px;
+    font-family: 'Playfair Display', serif; 
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-size: 45px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.contacts-information {
+    font-family: 'Roboto', sans-serif;
+    color: var(--more-color);
+    font-size: 17px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .testimonials-block {

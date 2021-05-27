@@ -262,19 +262,27 @@
         <img src="img/plain.svg" width="100" alt="plain">
         <p>Transfer from the airport</p>
         <a class="button" href="contacts">Book Now → </a>
-    </div>
-    <div>
-        <h2 id="contacts" class="contacts-title title"><span class="delimiter">—</span>Contact us</h2>
-        <h3 class="contacts-subtitle">Book your journey!</h3>
-        <p>Complete the form below, and we will contact you soon to discuss the details!</p>
-        <form action="form.php" method="POST">
-            <input type="text" placeholder="Your name">
-            <input type="number" placeholder="Your phone">
-            <input type="email" placeholder="Your email">
-            <input type="date" placeholder="Choose date>">
-            <input type="submit">
-        </form>
     </div>-->
+    <div class="wrapper-contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contacts-general">
+                    <div class="contacts-block">
+                        <h2 id="contacts" class="contacts-title"><span class="delimiter">—</span>Contact us</h2>
+                        <h3 class="contacts-subtitle">Book your journey!</h3>
+                        <p class="contacts-information">Complete the form below, and we will contact you soon to discuss the details!</p>
+                        <form class="contacts-form" action="form.php" method="POST">
+                            <input class="contacts-text" type="text" placeholder="Your name">
+                            <input class="contacts-text" type="number" placeholder="Your phone">
+                            <input class="contacts-text" type="email" placeholder="Your email">
+                            <input  class="contacts-text" type="date" placeholder="Choose date>">
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper-testimonials">
         <div class="container">
             <div class="row">
@@ -284,7 +292,7 @@
                         <h3 class="testimonials-subtitle">Travelers Share Their Experience</h3>
                         <p class="testimonials-information">Norway leaves no one indifferent. Its stunning nature, friendly people,<br> beautiful cities, and delicious cuisine will be remembered forever.</p>
                     </div>
-                    <div class="testimonials-slider">
+                    <div class="items-container">
                         <div class="testimonials-item">
                             <div class="testimonials-icon">
                                 <img src="img/tourist-review.webp" alt="tourist-review">
@@ -314,7 +322,7 @@
                                 <p class="testimonials-user">I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø, it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the last night, right at midnight, the clouds left, and I saw it! It was magical!</p>
                                 <p class="testimonials-date">January 12, 2020</p>
                             </article>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
