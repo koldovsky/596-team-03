@@ -17,9 +17,11 @@ body{
 }
  .wrapper {
     min-height: 135vh;
+    height: auto;
     width: 100%;
     background-image: url(../img/wrapper.webp);
     background-size: cover;
+    padding-bottom: 50px;
 }
 
 .container {
@@ -35,10 +37,18 @@ body{
 .header {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-logo {
     height: 40px;
+}
+
+@media screen and (max-width: 880px) {
+    .header-logo {
+       margin-top: 30px;
+    }
 }
 
 .header-nav {
@@ -49,15 +59,52 @@ body{
     width: 100%;
 }
 
+@media screen and (max-width: 880px) {
+    .header-nav {
+       align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-nav {
+       flex-wrap: wrap;
+    }
+}
+
 .header-nav-list {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
+@media screen and (max-width: 880px) {
+    .header-nav-list {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-nav-list {
+        width: 100%;
+    }
+}
+
 .header-nav-item {
     list-style-type: none;
     margin-right: 15px;
+}
+
+@media screen and (max-width: 880px) {
+    .header-nav-item {
+        list-style-type: none;
+        margin-right: 0;
+        margin-top: 20px;
+        justify-content: start;
+    }    
 }
 
 .header-nav-item a {
@@ -81,20 +128,47 @@ body{
 .header-info {
     margin-top: 150px;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header-introduce {
-    width: 60%;
+    width: 630px;
     height: 100%;
-    margin-right: 10%;
+}
+
+@media screen and (max-width: 1205px) {
+    .header-introduce {
+        width: 580px;
+    }  
+}
+
+@media screen and (max-width: 1024px) {
+    .header-introduce {
+        height: auto;
+    }  
 }
 
 .header-trip {
-    width: 30%;
+    width: 370px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 250px;
+    margin-left: 135px;
+}
+
+@media screen and (max-width: 1205px) {
+    .header-trip {
+        margin-left: 0;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .header-trip {
+        width: 100%;
+    } 
 }
 
 .header-trip img {
@@ -112,9 +186,35 @@ body{
     margin-bottom: 180px;
 }
 
+@media screen and (max-width: 1024px) {
+    .header-info-title {
+        margin-bottom: 40px;
+    } 
+}
+
+
+
 .header-info-title span:last-child {
     font-size: 180px;
     font-family: 'Playfair Display', serif;
+}
+
+@media screen and (max-width: 1205px) {
+    .header-info-title span:last-child {
+        font-size: 140px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .header-info-title span:last-child {
+        font-size: 100px;
+    }  
+}
+
+@media screen and (max-width: 425px) {
+    .header-info-title span:last-child {
+        font-size: 60px;
+    }  
 }
 
 .header-info-link img {
@@ -126,7 +226,13 @@ body{
 .header-info-link {
     display: flex;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 425px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-info-link  {
+        margin-top: 0;
+    }  
 }
 
 .header-info-link a {
@@ -160,12 +266,31 @@ body{
     margin-right: 10%;;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-us-introduce {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
 .about-us-info {
     width: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-us-info {
+        width: 100%;
+    }
+}
+
 .about-us-item {
-padding: 90px 0px 400px;
+    padding: 90px 0px 400px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-item {
+        padding: 20px 0px 400px;
+    }
 }
 
 .delimiter {
@@ -184,6 +309,12 @@ padding: 90px 0px 400px;
     font-size: 45px;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-us-subtitle {
+        font-size: 30px;
+    }
+}   
+
 .about-us-subtitle span {
     color: var(--marker-color);
 }
@@ -195,29 +326,77 @@ padding: 90px 0px 400px;
     line-height: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+    .information-about-us {
+        font-size: 15px;
+    }
+}
+
 .about-us-item-title {
     font-family: 'Roboto', sans-serif;
     color: var(--item-color);
     font-size: 24px;
-    margin-left: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-item-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-item-title {
+        margin-top: 10px;
+        font-size: 25px;
+    }
 }
 
 .about-us-item-info {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
     font-size: 15px;
-    margin-left: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-item-info {
+        font-size: 18px;
+    }
 }
 
 .about-us-item {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-us-option {
     height: 330px;
     width: 340px;
     background-color: var(--secondary-color);
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us-option {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us-option {
+        width: 210px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-option {
+        width: 100%;
+        margin-top: 50px;
+        height: auto;
+    }
 }
 
 .about-us-option img {
@@ -227,9 +406,37 @@ padding: 90px 0px 400px;
     margin-left: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    .about-us-option img {
+        width: 180px;
+        height: 85px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us-option img {
+        width: 310px;
+        height: 217px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-us-option img {
+        width: 220px;
+        height: 127px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
 .wrapper-about-us {
     background-image: url(../img/waves.webp);
-    height: 820px;
+    min-height: 820px;
+    height: auto;
     background-size: cover;
 }
 
@@ -242,8 +449,23 @@ padding: 90px 0px 400px;
     font-family: 'Roboto', sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+    .header-trip {
+        margin-top: 120px;
+        align-items: center;
+        width: 100%;
+    }  
+}
+
 .header-trip img {
     height: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-trip img {
+        width: 100%;
+        height: auto;
+    }  
 }
 
 .header-trip-list {
@@ -252,14 +474,34 @@ padding: 90px 0px 400px;
     font-weight: 700;
 }
 
+@media screen and (max-width: 1024px) {
+    .header-trip-list {
+        width: 100%;
+    } 
+}
+
 .header-trip-item {
     list-style-type: none;
     font-size: 13px;
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+    .header-trip-item {
+        list-style-type: none;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
 .header-trip-item:first-child {
     font-size: 17px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-trip-item:first-child {
+        font-size: 24px;
+    }
 }
 
 .header-trip-item:nth-child(3) {
@@ -279,14 +521,21 @@ margin-top: 40px;
 .wrapper-tour-itinerary {
     padding: 100px 0px;
     width: 100%;
-    height: 700px;
+    min-height: 700px;
+    height: auto;
     background-image: url(../img/wrapper-tour-itinerary.webp);
 }
 
 .tour-itinerary-general {
-    padding: 0px 40px;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (max-wiidth: 1350px) {
+    .tour-itinerary-general {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .tour-itinerary-title {
@@ -340,17 +589,41 @@ margin-top: 40px;
     justify-content: left;
 }
 
+@media screen and (max-width: 768px) {
+    .itinerary-map img {
+        width: 320px;
+        height: 520px;
+    }
+}
+
 .tour-itinerary-title {
     display: flex;
     flex-wrap: wrap;
 }
+
 .itinerary-map {
     width: 570px;
     margin-right: 60px;
 }
 
+@media screen and (max-width: 1350px) {
+    .itinerary-map {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .tour-itinerary-item {
     width: 570px;
+}
+
+@media screen and (max-width: 1350px) {
+    .tour-itinerary-item {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .tour-itinerary-option {
@@ -382,6 +655,7 @@ margin-top: 40px;
     padding: 120px 0px 60px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-norway-letter img {
@@ -391,16 +665,43 @@ margin-top: 40px;
     height: 430px;
 }
 
+@media screen and (max-width: 1200px) {
+    .about-norway-letter img {
+        width: 300px;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-norway-letter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .about-norway-item {
     padding: 0px 15px;
     margin: 30px 0px 0px;
     width: 25%;
 }
 
+@media screen and (max-width: 768px) {
+    .about-norway-item {
+        width: 100%;
+    }
+}
+
 .about-norway-block {
     padding: 0px 15px;
     margin: 30px 0px 0px;
     width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-norway-block {
+        width: 100%;
+    }
 }
 
 .about-norway-title {
@@ -418,6 +719,12 @@ margin-top: 40px;
     font-weight: bolder;
     color: var(--main-color);
     font-size: 45px;
+}
+
+@media screen and (max-width: 375px) {
+    .about-norway-subtitle {
+        font-size: 30px;
+    }
 }
 
 .about-norway-information {
@@ -836,4 +1143,14 @@ margin-top: 40px;
 
 .testimonials-slider button:hover {
    cursor: pointer;
+}
+
+.wrapper-information {
+    background-image: url(./img/mountain-view.webp);
+    background-size: cover;
+}
+
+.information-general {
+    display: flex;
+    justify-content: space-around;
 }
